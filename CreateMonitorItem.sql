@@ -1,0 +1,23 @@
+USE [Monitor]
+GO
+
+/****** Object:  Table [dbo].[MonitorItem]    Script Date: 11/3/2019 10:28:56 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[MonitorItem](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [varchar](50) NOT NULL,
+	[MonitorURL] [varchar](1000) NOT NULL,
+ CONSTRAINT [PK_MonitorItem] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
